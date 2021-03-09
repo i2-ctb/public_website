@@ -30,6 +30,7 @@
     "html.format.indentHandlebars": true,
     "cSpell.words": [
         "Shortcode",
-        "eleventy"
+        "eleventy",
+        "templating"
     ]
 }

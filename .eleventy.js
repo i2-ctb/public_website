@@ -5,7 +5,7 @@ module.exports = function configure(eleventyConfig) {
     
     //eleventyConfig.addGlobalData("layout", "main");
 
-    eleventyConfig.addPlugin(eleventyNavigationPlugin);
+    //eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
     eleventyConfig.addFilter("date", value => {
         var date = new Date(value);

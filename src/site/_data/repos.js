@@ -1,8 +1,9 @@
 
 const fetch = require("node-fetch");
+const config = require("./site.json");
 
 module.exports = async function () {
-    const response = await fetch(`https://api.github.com/orgs/PEDSnet/repos`, {
+    const response = await fetch(`https://api.github.com/orgs/${config.github.org}/repos`, {
         headers: {
             Accept: "application/vnd.github.v3+json"
         }
