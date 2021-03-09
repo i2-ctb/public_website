@@ -1,0 +1,14 @@
+---
+title: Projects
+layout: main
+tags: ['pages']
+---
+<ul>
+    {% for repo in repos %}
+        <li>
+            {{repo.name}}
+            {{repo.description}}
+        </li>
+    {% endfor %}
+</ul>
+

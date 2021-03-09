@@ -1,0 +1,41 @@
+<div class="washu-main-menu-wrapper">
+<style>
+li.active {
+    
+    background: #555;
+}
+</style>
+    <div class="container">
+        <nav class="washu-main-menu">
+            <button class="main-menu-back mobile-only">Back</button> <button class="main-menu-close mobile-only">Close</button> <span class="washu-main-menu-title mobile-only">Menu</span>
+            <div class="washu-main-menu-content">
+                 {# <div class="header-search mobile-only">
+                    <form role="search" method="get" class="search-form" action="https://webtheme.wustl.edu/?s=test" target="_blank">
+                        <label>
+                            <span class="screen-reader-text">Search for:</span> <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
+                            <div class="loading" title="loading" style="display: none;"><img src="/_assets/img/loading.svg" /></div>
+                        </label>
+                        <button type="submit" class="search-submit"><img src="/_assets/icons/search.svg" width="22" height="22" alt="" /> <span class="screen-reader-text">Search</span></button>
+                    </form>
+                    <button class="desktop-search-close"><img src="/_assets/icons/close.svg" width="22" height="22" alt="" /> <span class="screen-reader-text">Close Search</span></button>
+                </div>  
+                
+                 <li class="menu-item menu-item-1{%if item.url.startsWith(page.url) > 0 %} active{% endif %}">
+            
+                #}
+                <ul class="washu-main-menu-list">
+                {%- for item in collections.pages -%}
+                    <li class="menu-item menu-item-1 {%activePage item, page%}">
+                        <a href="{{item.url}}" class="menu-item-link">{{item.data.title}}</a>
+                    </li>
+                    {# <li class="menu-item menu-item-2"><a href="/meetings" class="menu-item-link">Meetings</a></li> #}
+                {%- endfor -%}
+                </ul>
+                 {# <div class="nav-search">
+                    <button type="button"><img src="/_assets/icons/search.svg" width="22" height="22" alt="" /> <span class="screen-reader-text">Open Search</span></button>
+                </div>  #}
+            </div>
+        </nav>
+    </div>
+</div>
+

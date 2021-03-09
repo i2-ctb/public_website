@@ -1,0 +1,35 @@
+{
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/.hg/store/**": true,
+        "**/dist": true
+    },
+    "files.exclude": {
+        "**/node_modules": true
+    },
+    "files.associations": {
+        "*.html": "njk"
+    },
+    "emmet.includeLanguages": {
+        "njk": "html"
+    },
+    "vsicons.associations.files": [
+        {
+            "icon": "nunjucks",
+            "extensions": [
+                "njk", ".html"
+            ],
+            "format": "svg"
+        }
+    ],
+    "material-icon-theme.files.associations": {
+        "*.html": "nunjucks"
+    },
+    "html.format.indentHandlebars": true,
+    "cSpell.words": [
+        "Shortcode",
+        "eleventy"
+    ]
+}
