@@ -33,7 +33,7 @@ module.exports = function configure(eleventyConfig) {
     });
 
     //Copy theme and custom JS/CSS to the dist/_assets folder
-    eleventyConfig.addPassthroughCopy({ "src/theme": "_assets" });
+    eleventyConfig.addPassthroughCopy("src/theme");
     eleventyConfig.addPassthroughCopy({ "src/site/_assets": "_assets" });
 
     //Returns a 11ty configuration using Nunjucks templating and default folders
