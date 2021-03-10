@@ -1,13 +1,20 @@
 {
   "name": "ctb-i2",
   "version": "0.0.1",
-  "description": "",
+  "keywords": [
+    "Translational Bioinformatics",
+    "Bioinformatics"
+  ],
+  "description": "Public website for the Center for Translational Bioinformatics at Washington University in St. Louis",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy"
   },
   "author": "ITLackey",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/i2-ctb/public_website"    
+  },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-navigation": "^0.1.6",

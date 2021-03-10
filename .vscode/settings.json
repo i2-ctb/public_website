@@ -29,8 +29,10 @@
     },
     "html.format.indentHandlebars": true,
     "cSpell.words": [
+        "Bioinformatics",
         "Shortcode",
         "eleventy",
+        "repos",
         "templating"
     ]
 }
