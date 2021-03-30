@@ -1,7 +1,13 @@
-{    
+{
     "title": "CTB @ I2",
     "contactEmail": "i2-help@wustl.edu",
-    "github":{
-        "org": "i2-ctb"
+    "github": {
+        "org": "i2-ctb",
+        "projectSummaryFilename": "README.md",
+        "projectImageFilename": "logo.png",
+        "excludedRepos1": [],
+        "excludedRepos": [
+            346112236
+        ]
     }
 }

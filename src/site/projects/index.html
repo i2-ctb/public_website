@@ -3,12 +3,49 @@ title: Projects
 layout: main
 tags: ['pages']
 ---
-<ul>
-    {% for repo in repos %}
-        <li>
-            {{repo.name}}
-            {{repo.description}}
-        </li>
-    {% endfor %}
-</ul>
+<style>
+    .project-list {
+        list-style: none;
 
+    }
+
+    .project-item {
+        padding: 1.5em 0px;
+
+    }
+
+    .project-list h2::after {
+        display: block;
+        content: "";
+        border-top: 8px solid #a51417;
+        max-width: 112px;
+        margin: 12px 0 0 0;
+        padding: 0 0 4px 0;
+    }
+
+    article p {
+        line-height: 28px;
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+
+    /* .project-list>li:nth-child(odd) {
+        background-color: #eee;
+        text-align: left;
+    }
+
+    .project-list>li:nth-child(even) {
+        background-color: #fff;
+        text-align: right;
+    } */
+</style>
+<article class="landing-page project-list">
+    {% for repo in repos %}
+    <div class="project-item" data-id={{repo.id}}>
+        <h2>{{repo.name}}</h2>
+        <p>{{repo.description}}</p>
+        {# <p>{{ repo.readme | safe }}</p> #}
+        <a href="{{repo.homepage}}">View this project &#187;</a>
+    </div>
+    {% endfor %}
+</article>
