@@ -24,7 +24,7 @@ li.active {
             
                 #}
                 <ul class="washu-main-menu-list">
-                {%- for item in collections.pages -%}
+                {%- for item in collections.pages|sort(false, true, 'data.menuIndex') -%}
                     <li class="menu-item menu-item-1 {%activePage item, page%}">
                         <a href="{{item.url}}" class="menu-item-link">{{item.data.title}}</a>
                     </li>

@@ -13,6 +13,7 @@ module.exports = function configure(eleventyConfig) {
 
     //Used by the menu to add a css class to the active page
     eleventyConfig.addShortcode("activePage", (item, page) => {
+        //console.log('activePage', item);
         if (page.url == "/" && item.url == "/")
             return "active";
 
@@ -25,6 +26,10 @@ module.exports = function configure(eleventyConfig) {
     //Easily display the year in html
     eleventyConfig.addShortcode("year", () => {
         return new Date().getFullYear().toString();
+    });
+
+    eleventyConfig.addShortcode("date", () => {
+        return new Date().toDateString();
     });
 
     //Merges keywords from site.json and the page data as a string
